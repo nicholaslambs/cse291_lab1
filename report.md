@@ -4,23 +4,24 @@
 
 | Cache | Cache Line Size | Total Size | Associativity | Number of Sets | Raw Latency |
 | ----- | --------------- | ---------- | ------------- | -------------- | ----------- |
-| L1-D  | 64              |            |               |                |             |
-| L2    |                 |            |               |                |             |
-| L3    |                 |            |               |                |             |
+| L1-D  | 64 B            | 32  KiB    | 8             | 64             | 4-5 cycles  |
+| L1-I  | 64 B            | 32  KiB    | 8             | 64             |             |
+| L2    | 64 B            | 256 KiB    | 4             | 1024           | 12 cycles   |
+| L3    | 64 B            | 6   MiB    | 12            | 8192           | 42 cycles   |
 
 ## 1-3
 
 **After completing your code, generate the histogram pdf file and include it in the lab report.**
 
-<!-- ![Histogram](./Part1-Timing/Histogram.pdf) -->
+![Histogram](./Part1-Timing/Histogram.pdf)
 
 ## 1-4
 
 **Based on the generated histogram, report two thresholds, one to distinguish between L2 and L3 latency and the other to distinguish between L3 and DRAM latency.**
 
-L2-L3 threshold:
+L2-L3 threshold: 24-40
 
-L3-DRAM threshold:
+L3-DRAM threshold: 40-140
 
 ## 2-2
 
